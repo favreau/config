@@ -10,6 +10,7 @@ before_install:
  - sudo apt-get install -qq automake || /bin/true
  - sudo apt-get install -qq bison || /bin/true
  - sudo apt-get install -qq cmake || /bin/true
+ - sudo apt-get install -qq cppcheck || /bin/true
  - sudo apt-get install -qq doxygen || /bin/true
  - sudo apt-get install -qq flex || /bin/true
  - sudo apt-get install -qq freeglut3-dev || /bin/true
@@ -23,6 +24,7 @@ before_install:
  - sudo apt-get install -qq libavdevice-dev || /bin/true
  - sudo apt-get install -qq libavformat-dev || /bin/true
  - sudo apt-get install -qq libavutil-dev || /bin/true
+ - sudo apt-get install -qq libboost-chrono-dev || /bin/true
  - sudo apt-get install -qq libboost-date-time-dev || /bin/true
  - sudo apt-get install -qq libboost-filesystem-dev || /bin/true
  - sudo apt-get install -qq libboost-program-options-dev || /bin/true
@@ -32,6 +34,7 @@ before_install:
  - sudo apt-get install -qq libboost-system-dev || /bin/true
  - sudo apt-get install -qq libboost-test-dev || /bin/true
  - sudo apt-get install -qq libboost-thread-dev || /bin/true
+ - sudo apt-get install -qq libfcgi-dev || /bin/true
  - sudo apt-get install -qq libgl1-mesa-dev || /bin/true
  - sudo apt-get install -qq libglewmx1.6-dev || /bin/true
  - sudo apt-get install -qq libhdf5-serial-dev || /bin/true
@@ -39,11 +42,11 @@ before_install:
  - sudo apt-get install -qq libibverbs-dev || /bin/true
  - sudo apt-get install -qq libjpeg-turbo8-dev || /bin/true
  - sudo apt-get install -qq liblircclient-dev || /bin/true
- - sudo apt-get install -qq libogre-dev || /bin/true
  - sudo apt-get install -qq libopenal-dev || /bin/true
  - sudo apt-get install -qq libopencv-dev || /bin/true
  - sudo apt-get install -qq libopenmpi-dev || /bin/true
  - sudo apt-get install -qq libopenscenegraph-dev || /bin/true
+ - sudo apt-get install -qq libpoppler-dev || /bin/true
  - sudo apt-get install -qq libqt4-dev || /bin/true
  - sudo apt-get install -qq librdmacm-dev || /bin/true
  - sudo apt-get install -qq libspnav-dev || /bin/true
@@ -56,6 +59,7 @@ before_install:
  - sudo apt-get install -qq libx11-dev || /bin/true
  - sudo apt-get install -qq libxmu-dev || /bin/true
  - sudo apt-get install -qq ninja-build || /bin/true
+ - sudo apt-get install -qq openmpi-bin || /bin/true
  - sudo apt-get install -qq pkg-config || /bin/true
  - sudo apt-get install -qq subversion || /bin/true
 script:
@@ -63,5 +67,7 @@ script:
  - cd Buildyard
  - mkdir config.travis
  - cp ../*.* config.travis
- - env TRAVIS=1 make -j8 debug release
- - env TRAVIS=1 make tests
+ - env TRAVIS=1 make -j2 debug
+ - env TRAVIS=1 make -j2 release
+ - env TRAVIS=1 make tests -C Debug
+ - env TRAVIS=1 make tests -C Release
