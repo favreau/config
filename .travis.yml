@@ -28,6 +28,7 @@ before_install:
  - sudo apt-get install -qq libboost-chrono-dev || /bin/true
  - sudo apt-get install -qq libboost-date-time-dev || /bin/true
  - sudo apt-get install -qq libboost-filesystem-dev || /bin/true
+ - sudo apt-get install -qq libboost-iostreams-dev || /bin/true
  - sudo apt-get install -qq libboost-program-options-dev || /bin/true
  - sudo apt-get install -qq libboost-python-dev || /bin/true
  - sudo apt-get install -qq libboost-regex-dev || /bin/true
@@ -38,17 +39,19 @@ before_install:
  - sudo apt-get install -qq libfcgi-dev || /bin/true
  - sudo apt-get install -qq libgl1-mesa-dev || /bin/true
  - sudo apt-get install -qq libglewmx1.6-dev || /bin/true
+ - sudo apt-get install -qq libgoogle-perftools-dev || /bin/true
  - sudo apt-get install -qq libgraphviz-dev || /bin/true
  - sudo apt-get install -qq libhdf5-serial-dev || /bin/true
  - sudo apt-get install -qq libhwloc-dev || /bin/true
  - sudo apt-get install -qq libibverbs-dev || /bin/true
  - sudo apt-get install -qq libjpeg-turbo8-dev || /bin/true
  - sudo apt-get install -qq liblircclient-dev || /bin/true
- - sudo apt-get install -qq libogre-dev || /bin/true
+ - sudo apt-get install -qq libogre-1.8-dev || /bin/true
  - sudo apt-get install -qq libopenal-dev || /bin/true
  - sudo apt-get install -qq libopencv-dev || /bin/true
  - sudo apt-get install -qq libopenmpi-dev || /bin/true
  - sudo apt-get install -qq libopenscenegraph-dev || /bin/true
+ - sudo apt-get install -qq libpapi-dev || /bin/true
  - sudo apt-get install -qq libpoppler-dev || /bin/true
  - sudo apt-get install -qq libqt4-dev || /bin/true
  - sudo apt-get install -qq librdmacm-dev || /bin/true
@@ -56,7 +59,9 @@ before_install:
  - sudo apt-get install -qq libswscale-dev || /bin/true
  - sudo apt-get install -qq libtclap-dev || /bin/true
  - sudo apt-get install -qq libturbojpeg || /bin/true
+ - sudo apt-get install -qq libudev-dev || /bin/true
  - sudo apt-get install -qq libudt-dev || /bin/true
+ - sudo apt-get install -qq libunwind8-dev || /bin/true
  - sudo apt-get install -qq libvncserver-dev || /bin/true
  - sudo apt-get install -qq libvtk5-dev || /bin/true
  - sudo apt-get install -qq libx11-dev || /bin/true
@@ -66,6 +71,9 @@ before_install:
  - sudo apt-get install -qq openmpi-bin || /bin/true
  - sudo apt-get install -qq pkg-config || /bin/true
  - sudo apt-get install -qq subversion || /bin/true
+ - sudo apt-get install -qq tau || /bin/true
+ - sudo apt-get install -qq vagrant || /bin/true
+ - sudo apt-get install -qq virtualbox || /bin/true
 script:
  - git clone --depth 10 https://github.com/Eyescale/Buildyard.git
  - cd Buildyard
