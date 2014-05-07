@@ -1,5 +1,5 @@
 set(HPX_PACKAGE_VERSION 0.9)
-set(HPX_DEPENDS papi tau apex sodium REQUIRED Boost hwloc HDF5)
+set(HPX_DEPENDS papi tau apex sodium hwloc REQUIRED Boost HDF5)
 set(HPX_BOOST_COMPONENTS "date_time filesystem program_options regex serialization system thread atomic chrono")
 set(HPX_DEB_DEPENDS libboost-date-time-dev libboost-filesystem-dev
   libboost-program-options-dev libboost-regex-dev libboost-serialization-dev
