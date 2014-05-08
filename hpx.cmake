@@ -3,7 +3,7 @@ set(HPX_DEPENDS papi tau apex sodium hwloc REQUIRED Boost HDF5)
 set(HPX_BOOST_COMPONENTS "date_time filesystem program_options regex serialization system thread atomic chrono")
 set(HPX_DEB_DEPENDS libboost-date-time-dev libboost-filesystem-dev
   libboost-program-options-dev libboost-regex-dev libboost-serialization-dev
-  libboost-system-dev libboost-thread-dev tau libpapi-dev
+  libboost-system-dev libboost-thread-dev tau libpapi-dev fop libtbb-dev
   libgoogle-perftools-dev libunwind8-dev)
 set(HPX_OPTIONAL ON)
 set(HPX_FORCE_BUILD ${CI_BUILD})
