@@ -1,2 +1,3 @@
 set(FLATBUFFERS_REPO_URL https://github.com/BlueBrain/flatbuffers.git)
+set(FLATBUFFERS_CMAKE_ARGS -DFLATBUFFERS_USE_BOOST=ON)
 set(FLATBUFFERS_OPTIONAL ON)

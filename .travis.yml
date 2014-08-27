@@ -66,7 +66,6 @@ before_install:
  - sudo apt-get install -qq libspnav-dev || /bin/true
  - sudo apt-get install -qq libswscale-dev || /bin/true
  - sudo apt-get install -qq libtbb-dev || /bin/true
- - sudo apt-get install -qq libtclap-dev || /bin/true
  - sudo apt-get install -qq libturbojpeg || /bin/true
  - sudo apt-get install -qq libudev-dev || /bin/true
  - sudo apt-get install -qq libudt-dev || /bin/true
@@ -83,8 +82,6 @@ before_install:
  - sudo apt-get install -qq python-nose || /bin/true
  - sudo apt-get install -qq subversion || /bin/true
  - sudo apt-get install -qq tau || /bin/true
- - sudo apt-get install -qq vagrant || /bin/true
- - sudo apt-get install -qq virtualbox || /bin/true
 script:
  - git clone --depth 10 https://github.com/Eyescale/Buildyard.git
  - cd Buildyard
