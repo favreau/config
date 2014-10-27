@@ -1,3 +1,6 @@
-set(FLATBUFFERS_REPO_URL https://github.com/BlueBrain/flatbuffers.git)
-set(FLATBUFFERS_CMAKE_ARGS -DFLATBUFFERS_USE_CXX03_STDLIB=ON)
+if(CXX_AUTO_SUPPORTED AND CXX_NULLPTR_SUPPORTED)
+  set(FLATBUFFERS_REPO_URL https://github.com/BlueBrain/flatbuffers.git)
+else()
+  message(STATUS "Skip FlatBuffers: missing C++11 features")
+endif()
 set(FLATBUFFERS_OPTIONAL ON)
