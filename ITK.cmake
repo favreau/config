@@ -1,1 +1,0 @@
-set(ITK_PACKAGE_VERSION 4.0)
