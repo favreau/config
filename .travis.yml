@@ -45,6 +45,7 @@ before_install:
  - sudo apt-get install -qq libglewmx1.6-dev || /bin/true
  - sudo apt-get install -qq libgoogle-perftools-dev || /bin/true
  - sudo apt-get install -qq libgraphviz-dev || /bin/true
+ - sudo apt-get install -qq libgts-dev || /bin/true
  - sudo apt-get install -qq libhdf5-serial-dev || /bin/true
  - sudo apt-get install -qq libhwloc-dev || /bin/true
  - sudo apt-get install -qq libibverbs-dev || /bin/true
