@@ -1,12 +1,16 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-
-# Compiled Dynamic libraries
-*.so
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+/CMake/common/
+/Collage/
+/Deflect/
+/Equalizer/
+/FlatBuffers/
+/GLStats/
+/Livre/
+/Lunchbox/
+/Pression/
+/config.eyescale/
+/dash/
+/hwsd/
+/vmmlib/
+/zeq/
+build/
+___*
