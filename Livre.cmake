@@ -9,4 +9,5 @@ set(LIVRE_DEPENDS BBPTestData OpenMP Tuvok VTune GLEW_MX zeq FlatBuffers
            Qt5Widgets Threads)
 set(LIVRE_BOOST_COMPONENTS
   "filesystem program_options thread system regex unit_test_framework")
+set(LIVRE_DEB_DEPENDS libqt5opengl5-dev)
 set(LIVRE_SUBPROJECT ON)
